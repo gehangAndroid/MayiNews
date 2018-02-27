@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_bg">#F3F5F4</color>
+    <color name="common_gary">#515051</color>
+    <color name="status_color_red">#D33D3C</color>
+    <color name="black">#000000</color>
+    <color name="divider_grey">#E2E3E4</color>
+    <color name="tab_selected_color">#fff85959</color>
+    <color name="tip_view_bg">#D5E8F6</color>
+    <color name="tip_view_text_color">#4592C6</color>
+    <color name="subscribe_category_bar_bg_night">#cc363636</color>
+    <color name="text_grey">#AEAEAE</color>
+    <color name="pull_refresh_bg">#F3F5F4</color>
+    <color name="commom_text_color">#ff222222</color>
+    <color name="re_divider_grey">#ffd8d8d8</color>
+    <color name="white">#ffffff</color>
+    <color name="appColor">#0C7AD9</color>
+    <color name="appColorPressed">#900C7AD9</color>
+    <color name="red">#E94033</color>
+    <color name="item_press">#C3C4C5</color>  <!-- 设置页面点击按下的背景色-->
+
+</resources>

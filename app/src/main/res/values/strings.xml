@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">蚂蚁资讯</string>
+    <string name="tab_home">头条</string>
+    <string name="tab_video">视频</string>
+    <string name="tab_mine">我的</string>
+    <string name="net_unavailable">网络不可用</string>
+    <string name="net_error_msg">网络不给力</string>
+    <string name="AppName">蚂蚁咨讯</string>
+    <string name="person_top_message">消息</string>
+    <string name="person_top_setting">设置</string>
+    //
+</resources>

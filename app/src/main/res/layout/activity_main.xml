@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.mayinews.z.view.NoScrollViewPager
+
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_grey"/>
+
+
+    <LinearLayout
+        android:padding="2dp"
+        android:id="@+id/llBottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_toutiao"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_toutiao"
+
+                android:src="@drawable/toutiao_selector"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:textColor="@drawable/main_text_selector"
+                android:textSize="12sp"
+                android:id="@+id/tv_toutiao"
+                android:text="@string/tab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_video"
+                android:src="@drawable/video_selector"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="-2dp"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:textColor="@drawable/main_text_selector"
+                android:textSize="12sp"
+                android:id="@+id/tv_video"
+                android:text="@string/tab_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_mine"
+                android:src="@drawable/mine_selector"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:textColor="@drawable/main_text_selector"
+                android:textSize="12sp"
+                android:id="@+id/tv_mine"
+                android:text="@string/tab_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
