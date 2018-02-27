@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mayinews.z.ui.activity.SettingActivity">
+    <include  layout="@layout/include_top" />
+    <RelativeLayout
+        android:id="@+id/rl_perfect_info"
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="完善资料"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+         <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_arrow_right_gray"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_clearcache"
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+
+
+            android:text="清除缓存"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+         <ImageView
+
+             android:id="@+id/right_arrow"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/icon_arrow_right_gray"
+             android:layout_width="16dp"
+             android:layout_height="16dp"
+              />
+
+        <TextView
+            android:id="@+id/tv_cachesize"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="给蚂蚁资讯评分"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_arrow_right_gray"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="建议与反馈"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_arrow_right_gray"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="错误上报"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_arrow_right_gray"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="隐私协议"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_arrow_right_gray"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="检查更新"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_arrow_right_gray"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_grey"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/setting_item_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+
+            android:text="关于我们"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_arrow_right_gray"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_loginout"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@drawable/loginout_selector"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="退出登录"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+</LinearLayout>

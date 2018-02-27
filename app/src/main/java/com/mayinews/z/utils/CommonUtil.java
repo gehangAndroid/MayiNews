@@ -360,4 +360,61 @@ public class CommonUtil {
             return new GlideUrl(url, new LazyHeaders.Builder().addHeader("Referer", "http://m.mayinews.com").build());
         }
     }
+
+
+    //时长准转化,秒数小于1小时的长度 可用
+
+    public static String getDuration(String duration) {
+
+        String result =null;
+        if(duration!=null && !duration.equals("")){
+
+
+        int i = Integer.parseInt(duration);
+
+        if(i<60){
+
+            result =  "00:"+i;
+
+        }else{
+
+            int min = i / 60;
+            int sen = i % 60;
+            if(min<10){
+
+                if(sen<10){
+                    result = "0"+min+":0"+sen;
+                }else{
+                    result = "0"+min+":"+sen;
+
+                }
+
+            }else{
+
+                if(sen<10){
+                    result = ""+min+":0"+sen;
+                }else{
+                    result = ""+min+":"+sen;
+
+                }
+
+            }
+        }
+
+    }else{
+            result="";
+        }
+        return result;
+}
+
+   public static int getScreenWidth(Context context){
+
+       WindowManager wm = (WindowManager) context
+               .getSystemService(Context.WINDOW_SERVICE);
+       int width = wm.getDefaultDisplay().getWidth();
+       int height = wm.getDefaultDisplay().getHeight();
+        return width;
+   }
+
+
 }

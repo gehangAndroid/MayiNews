@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mayinews.z.ui.activity.SettingActivity">
+
+
+    <include  layout="@layout/include_top" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+             <ImageView
+                 android:visibility="gone"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp" />
+             <TextView
+                 android:textColor="@color/black"
+                 android:textSize="16sp"
+                 android:background="#90f4d227"
+                 android:gravity="center"
+                 android:text="※为什么很多趣友每天能转上万金币？新手必看！"
+                 android:paddingLeft="12dp"
+                 android:paddingRight="12dp"
+                 android:paddingTop="6dp"
+                 android:paddingBottom="6dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+                 <LinearLayout
+                     android:layout_marginTop="12dp"
+                     android:paddingLeft="12dp"
+                     android:paddingRight="12dp"
+                     android:orientation="horizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                      <LinearLayout
+                          android:gravity="center_vertical"
+                          android:orientation="vertical"
+                          android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent">
+                       <TextView
+
+
+                           android:text="当前余额:"
+                           android:textSize="14sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                          <TextView
+                              android:textColor="@color/Yellow"
+                              android:layout_marginTop="6dp"
+                              android:text="5.95"
+                              android:textSize="40sp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content" />
+
+                      </LinearLayout>
+                     <LinearLayout
+                         android:gravity="center_vertical"
+                         android:orientation="vertical"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="match_parent">
+                         <TextView
+
+
+                             android:text="昨日金币输入"
+                             android:textSize="14sp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+                         <TextView
+                             android:textColor="@color/Yellow"
+                             android:layout_marginTop="6dp"
+                             android:text="5.95"
+                             android:textSize="16sp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />
+                     </LinearLayout>
+                 </LinearLayout>
+                  <View
+                      android:layout_marginTop="16dp"
+                      android:layout_marginLeft="12dp"
+                      android:layout_marginRight="12dp"
+                      android:background="@color/divider_grey"
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:id="@+id/rl_mygold"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_mygold"
+                                android:textColor="@drawable/system_task_textselector"
+                                android:layout_marginTop="16dp"
+                                android:textSize="18sp"
+                                android:layout_centerInParent="true"
+                                android:text="金币"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                                <View
+                                    android:id="@+id/mygold_view"
+                                    android:background="@color/appColor"
+                                    android:layout_marginTop="16dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"/>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                             android:id="@+id/rl_mycoin"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_mycoin"
+                                android:textColor="@drawable/system_task_textselector"
+                                android:layout_marginTop="16dp"
+                                android:textSize="18sp"
+                                android:layout_centerInParent="true"
+                                android:text="零钱"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <View
+                                android:id="@+id/mycoin_view"
+                                android:visibility="invisible"
+                                android:background="@color/appColor"
+                                android:layout_marginTop="16dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <com.mayinews.z.view.MyListView
+
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+         </LinearLayout>
+
+
+
+    </ScrollView>
+
+        <RelativeLayout
+           android:padding="20dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:gravity="center"
+
+                android:layout_width="match_parent"
+                 android:textSize="16sp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/tv_signin_back_selector"
+                android:clickable="true"
+                android:text="累计收入5.97 每天分享赚30金币" />
+        </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

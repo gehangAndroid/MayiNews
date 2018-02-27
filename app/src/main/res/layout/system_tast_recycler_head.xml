@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="100dp"
+android:background="#f79a3e">
+<LinearLayout
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+    <TextView
+        android:gravity="center"
+
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/tv_signin_back_selector"
+        android:clickable="true"
+        android:text="签到" />
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+</LinearLayout>
+
+
+</RelativeLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#99f79a3e"
+android:orientation="horizontal"
+android:paddingBottom="10dp"
+android:paddingLeft="4dp"
+android:paddingRight="4dp"
+android:paddingTop="10dp">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir1"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir2"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir3"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir4"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir5"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir6"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cir7"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="1dp"
+        android:src="@drawable/icon_person_invite"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="1天" />
+
+</LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

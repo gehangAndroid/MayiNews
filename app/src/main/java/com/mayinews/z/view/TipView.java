@@ -16,8 +16,8 @@ import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.chaychan.library.UIUtils;
 import com.mayinews.z.R;
+import com.mayinews.z.utils.UIUtils;
 
 
 /**

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.orange.library.SwipeFinishLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#457"
+    swipe:is_full_screen="true"
+    swipe:max_scroll_time="300"
+    swipe:scroll_mode="RIGHT"
+    >
+
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mayinews.z.ui.activity.MyAttenActivity">
+    <include  layout="@layout/include_top" />
+</LinearLayout>
+</com.orange.library.SwipeFinishLayout>

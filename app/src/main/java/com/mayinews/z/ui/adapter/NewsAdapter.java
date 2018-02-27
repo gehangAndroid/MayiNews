@@ -26,20 +26,24 @@ import java.util.List;
 public class NewsAdapter extends BaseQuickAdapter<News.ResultBean,BaseViewHolder>{
 
     /**
-     * 一张图片的布局
+     * 一张图片的布局类型
      */
     private static final int ONE_PICS_NEWS=1;
 
 
     /**
-     * 三张图片的布局
+     * 三张图片的布局类型
      */
     private static final int THREE_PICS_NEWS = 2;
+
+
+
     private  Context context;
 
-    public NewsAdapter(Context context,@Nullable List<News.ResultBean> data) {
+    public NewsAdapter(Context context, @Nullable List<News.ResultBean> data) {
         super(data);
         this.context=context;
+
         /**
          * 分类布局
          */
@@ -48,6 +52,7 @@ public class NewsAdapter extends BaseQuickAdapter<News.ResultBean,BaseViewHolder
         setMultiTypeDelegate(new MultiTypeDelegate<News.ResultBean>() {
             @Override
             protected int getItemType(News.ResultBean resultBean) {
+
                 if(resultBean.getImages().size()==1){
 
                     return  ONE_PICS_NEWS;
@@ -70,6 +75,8 @@ public class NewsAdapter extends BaseQuickAdapter<News.ResultBean,BaseViewHolder
      * @param helper
      * @param item
      */
+
+
     @Override
     protected void convert(BaseViewHolder helper, News.ResultBean item) {
         int itemViewType = helper.getItemViewType();
@@ -87,6 +94,10 @@ public class NewsAdapter extends BaseQuickAdapter<News.ResultBean,BaseViewHolder
                 Glide.with(context).load(CommonUtil.buildGlideUrl(item.getImages().get(1))).into((ImageView) helper.getView(R.id.image2));
                 Glide.with(context).load(CommonUtil.buildGlideUrl(item.getImages().get(2))).into((ImageView) helper.getView(R.id.image3));
                 break;
+
+
+
+
 
 
 

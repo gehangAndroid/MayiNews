@@ -1,7 +1,9 @@
 package com.mayinews.z.ui.base;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.mayinews.z.R;
 
@@ -11,6 +13,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.e("TAG","是不是再次进来了");
         super.onCreate(savedInstanceState);
         //子类不再需要设置布局ID，也不再需要使用ButterKnife.bind()
         setContentView(provideContentViewId());
@@ -35,4 +38,9 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected abstract int provideContentViewId();
 
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

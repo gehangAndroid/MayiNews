@@ -5,11 +5,20 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-/**
- * Created by Administrator on 2018/1/10 0010.
- */
+import butterknife.Unbinder;
 
-public class LazyLoadFragment extends Fragment {
+/**
+ * Created by dasu on 2016/9/27.
+ *
+ * 封装了懒加载的实现
+ *
+ * 1、Viewpager + Fragment情况下，fragment的生命周期因Viewpager的缓存机制而失去了具体意义
+ * 该抽象类自定义新的回调方法，当fragment可见状态改变时会触发的回调方法，和 Fragment 第一次可见时会回调的方法
+ *
+ * @see #onFragmentVisibleChange(boolean)
+ * @see #onFragmentFirstVisible()
+ */
+public abstract class LazyLoadFragment extends Fragment {
 
     private static final String TAG = LazyLoadFragment.class.getSimpleName();
 
@@ -17,6 +26,7 @@ public class LazyLoadFragment extends Fragment {
     private boolean isReuseView = true ;//是否进行复用，默认复用
     private boolean isFragmentVisible;
     private View rootView;
+
 
     //setUserVisibleHint()在Fragment创建时会先被调用一次，传入isVisibleToUser = false
     //如果当前Fragment可见，那么setUserVisibleHint()会再次被调用一次，传入isVisibleToUser = true
@@ -117,6 +127,7 @@ public class LazyLoadFragment extends Fragment {
         isFirstEnter = true;
         isReuseView = true;
         isFragmentVisible = false;
+
     }
 
     @Override
@@ -124,6 +135,4 @@ public class LazyLoadFragment extends Fragment {
         super.onDestroy();
         resetVariavle();
     }
-
-
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mayinews.z.ui.activity.InviteCodeActivity">
+    <include  layout="@layout/include_top" />
+    <LinearLayout
+        android:background="#d74632"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#FFe765"
+            android:text="输入好友邀请码您可以领取红包"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+
+            android:textSize="18sp"
+            android:background="@drawable/et_invite_back"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:hint="输入邀请码"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+          <Button
+              android:background="@drawable/btn_open_red_pack"
+              android:padding="18dp"
+              android:text="拆红包"
+              android:textSize="20sp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="30dp"
+              android:layout_width="160dp"
+              android:layout_height="wrap_content" />
+        <TextView
+
+            android:textSize="12sp"
+            android:textColor="#FFe765"
+            android:text="像您的好友/推荐人询问邀请码"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
